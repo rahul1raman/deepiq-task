@@ -1,0 +1,59 @@
+.square {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    border: .3rem solid #fff;
+    height: 20vw;
+    cursor: pointer;
+    -webkit-filter: brightness(100%);
+    &:hover {
+        -webkit-filter: brightness(70%);
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -o-transition: all 1s ease;
+        -ms-transition: all 1s ease;
+         transition: all 1s ease;
+    }
+}
+
+
+
+
+
+.card {
+    .card-body {
+        .avatar {
+            border-radius: 50%;
+            width: 4em;
+            padding-right: 1em;
+            display: inline-block;
+            position: relative;
+            top: -1em;
+
+        }
+        .card-heading{
+            display: inline-block
+        }
+        .grid{
+            background-image: url("https://tse2.mm.bing.net/th?id=OIP.t6ZkIsYEez_XYbGuMvW-eAHaLS&o=5&pid=1.7"); 
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 15em;
+        }
+
+        .grid-image{
+            width: 100%;
+        }
+
+        .grid2{
+            overflow: hidden;
+            height: 12em;
+        }
+
+        .card-link {
+                text-decoration: none;
+                color: #000;
+                border: none;
+        }
+    }
+}

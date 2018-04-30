@@ -1,0 +1,22 @@
+
+<div class="row">
+    <div class="col">
+        <div class="card">
+            <div class="card-body">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Default_profile_picture_%28male%29_on_Facebook.jpg/600px-Default_profile_picture_%28male%29_on_Facebook.jpg" width="60px" style="border-radius: 50%; display: inline-block; position: relative; top:-1em;margin-right: 1em;">
+                <div style="display: inline-block;">
+                    <h5 class="card-title">GALLERY</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Collections</h6>
+                </div>
+                <div class="row flex-container">
+                    <div *ngFor="let item of this.galleryData" class="col-3 square" id="sadsad" [ngStyle]="{ 'background-image': 'url(' + item.image_url + ')'}" [routerLink]= "['/details']" (click)="sendItem(item)">
+                    </div>
+                </div>
+                <hr>
+                <a href="#" class="md-btn md-btn-ripple card-link">ACTION</a>
+                <hr>
+                <a href="#" class="md-btn md-btn-ripple card-link">ACTION</a>
+            </div>
+        </div>
+    </div>
+</div>

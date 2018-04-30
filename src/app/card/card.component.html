@@ -1,0 +1,16 @@
+<div class="row">
+  <div class="col">
+      <div class="card mx-auto" style="width: 20rem; margin: 5em;">
+          <img class="card-img-top" [src]="this.currentItem.image_url" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">{{this.currentItem.title}}</h5>
+            <h6 class="card-subtitle mb-2 text-muted">{{this.currentItem.subtitle}}</h6>
+            <a href="#" class="md-btn md-btn-ripple">SHARE</a>
+            <a [routerLink]= "['/gallery']" class="md-btn md-btn-ripple" style="color:#684b9c">EXPLORE</a>
+            <a *ngIf="!this.showMore" (click)="this.showMore = 1" class="pull-right" [@fadeInOut]><i class="fas fa-chevron-circle-down"></i></a>
+            <a *ngIf="this.showMore" (click)="this.showMore = 0" class="pull-right" [@fadeInOut]><i class="fas fa-chevron-circle-up"></i></a>
+            <p *ngIf="this.showMore" [@fadeInOut] class="card-text">{{this.currentItem.content}}</p>
+          </div>
+      </div>
+  </div>
+</div>
